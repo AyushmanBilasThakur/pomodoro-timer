@@ -41,6 +41,10 @@ body{
 .selection li {
     padding: 10px 20px;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .selected{
@@ -56,6 +60,7 @@ button{
     border: none;
     cursor: pointer;
     color: white;
+    
 }
 
 
@@ -111,7 +116,7 @@ button{
 
 .cog{
     margin-top: 30px;
-    color: #393D52;
+    color: white;
 }
 
 
@@ -196,4 +201,15 @@ hr{
 
 .apply:hover{
     background-color: #be4c4e;
+}
+
+@media (max-width: 400px){
+
+    .settings{
+        width: 90%;
+    }
+
+    .spinners input{
+        width: 100%;
+    }
 }

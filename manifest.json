@@ -1,0 +1,16 @@
+{
+    "name": "Simple pomodoro timer",
+    "short_name": "Pomodoro",
+    "background_color": "#1E2240",
+    "theme_color": "#FA6C6F",
+    "display": "standalone",
+    "description": "A simple pomodoro app",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "sizes": "128x128",
+            "src": "technique.png"
+        }
+    ]
+}

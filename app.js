@@ -1,3 +1,9 @@
+window.addEventListener("load", () => {
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+    }
+});
+
 const circle = document.querySelector('.progress-ring__circle');
 const radius = circle.r.baseVal.value;
 const circumference = radius * 2 * Math.PI;
