@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="heading">
+            pomodoro
+        </div>
+
+        <ul class="selection">
+            <li class="selected">
+                <button id="pomoSelector">pomodoro</button>  
+            </li>
+            <li>
+                <button id="sbSelector">short break</button> 
+            </li>
+            <li>
+                <button id="lbSelector">long break</button>
+            </li>
+        </ul>
+
+        <div class="circular">
+
+            <svg
+            class="progress-ring"
+            width="200"
+            height="200">
+                <circle
+                    class="progress-ring__circle"
+                    stroke="#fa6c6f"
+                    stroke-width="8"
+                    fill="transparent"
+                    r="96"
+                    cx="100"
+                    cy="100"
+                />
+            </svg>
+
+            <div class="inner" >
+                <div class="clock" id="clock">
+                    25:00
+                </div>
+                <button id="pause" class="pause">S T A R T</button>
+            </div>
+        </div>
+
+        <button class="cog" id="setting_open">
+            <i class="fa fa-cog"></i>
+        </button>
+
+
+        <div class="settings">
+            <div class="head">
+                <p>Settings</p>
+                <button id="setting_close">&Cross;</button>
+            </div>
+
+            <hr>
+
+            <div class="settings-body">
+                <h3>TIME(MINUTES)</h3>
+            
+
+                <div class="spinners">
+                    <div>
+                        <p>pomodoro</p>
+                        <input type="number" id="pomodoro">
+                    </div>
+                    <div>
+                        <p>short break</p>
+                        <input type="number" id="shortBreak">
+                    </div>
+                    <div>
+                        <p>long break</p>
+                        <input type="number" id="longBreak">
+                    </div>
+                </div>
+
+                <hr>
+                <p class="custom"><strong>About pomodoro:</strong> The Pomodoro Technique is a time management method for students, perfectionists, and procrastinators of all kinds. Work in focused, 25-minute intervals</p>
+                <hr class="hr-mt-10">
+            </div>
+
+            
+
+            <button class="apply" id="apply">
+                Apply
+            </button>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
